@@ -11,10 +11,12 @@ th{
 
 table{
     background-color: black;
+    text-align: center;
 }
 
 tr{
     background-color: rgb(188, 188, 188);
+    text-align: center;
 }
 tr:nth-child(even){
     background-color: rgb(255, 255, 255);
