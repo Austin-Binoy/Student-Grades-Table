@@ -3,115 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="assignment-03.css">
+    <title>Austin Binoy || 22483344</title>
+    
 </head>
 <body>
-    <table style="width:100%">
-        <div class="heading">
-            <tr> 
-                <th>Student Name</th>
-                <th>Student ID</th>
-                <th>Assignment 1</th>
-                <th>Assignment 2</th>
-                <th>Assignment 3</th>
-                <th>Assignment 4</th>
-                <th>Assignment 5</th>
-                <th>Average (%)</th>
-            </tr>
-        </div>
+
+    <div class="functionButtons">
+        <div class="addBtn container">
+     <button id="addRowBtn">Add Student Row</button>
+     <button id="addColumnBtn">Add Column</button>
+     <button id="removeRowBtn">Remove Student Row</button> 
+     </div>
+    </div>
+  
+    <table id="schoolGrades">
+    <tr>
+        <th>Student Name</th>
+        <th> Student ID</th>
+        <th>Assignment 1</th>
+        <th>Assignment 2</th>
+        <th>Assignment 3</th>
+        <th>Assignment 4</th>
+        <th>Assignment 5</th>
+        <th>Average(%)</th>
         
-        <tr>
-            <td>Name</td>
-            <td>123456</td>
-            <td class="Assignment one"> <input type="number" class="inputField"> </td>
-            <td class="Assignment two"> <input type="number" class="inputField"> </td>
-            <td class="Assignment three"> <input type="number" class="inputField"> </td>
-            <td class="Assignment four"> <input type="number" class="inputField"> </td>
-            <td class="Assignment five"> <input type="number" class="inputField"> </td>
-            <td id="outputBox">00</td>
-        </tr>
-        
-        
-        
-        
-        
+    </tr>
+
+    
+    <tr>
+        <td>Joe BLoggs</td>
+        <td>127632</td>
+        <td class="assignment one"> <input type="int" value="-" oninput="removeMinus(this)"></td>
+        <td class="assignment two"> <input type="int" value="-" oninput="removeMinus(this)"></td>
+        <td class="assignment three"><input type="int" value="-" oninput="removeMinus(this)"></td>
+        <td class="assignment four"> <input type="int" value="-" oninput="removeMinus(this)"></td>
+        <td class="assignment five"> <input type="int" value="-" oninput="removeMinus(this)"></td>
+        <td class="average">-</td>
+    </tr>
+   
+    <tr>
+        <td>Jake Bloggs</td>
+        <td>12433</td>
+        <td class="assignment one"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment two"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment three"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment four"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment five"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="average">-</td>
+    </tr>
+    <tr>
+        <td>mike wasowksi</td>
+        <td>345345</td>
+        <td class="assignment one"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment two"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment three"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment four"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment five"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="average">-</td>
+    </tr>
+    <tr>
+        <td>jake holland</td>
+        <td>7654634</td>
+        <td class="assignment one"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment two"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment three"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment four"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment five"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="average">-</td>
+    </tr>
+    <tr>
+        <td>Haden moke</td>
+        <td>24356</td>
+        <td class="assignment one"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment two"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment three"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment four"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment five"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="average">-</td>
+    </tr>
+    <tr>
+    <td>kevin konro</td>
+        <td>445751</td>
+        <td class="assignment one"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment two"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment three"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment four"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment five"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="average">-</td>
+    </tr>
+    <tr>
+    <td>De Congo</td>
+        <td>94657</td>
+        <td class="assignment one"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment two"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment three"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment four"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment five"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="average">-</td>
+    </tr>
+    <tr>
+    <td>Johnny depp</td>
+        <td>56784468</td>
+        <td class="assignment one"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment two"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment three"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment four"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment five"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="average">-</td>
+    </tr>
+    <tr>
+    <td>Scooby Doo</td>
+        <td>346889</td>
+        <td class="assignment one"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment two"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment three"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment four"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment five"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="average">-</td>
+    </tr>
+    <tr>
+    <td>Johnny Test</td>
+        <td>05468</td>
+        <td class="assignment one"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment two"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment three"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment four"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment five"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="average">-</td>
+    </tr>
+    <td>Sarah Mills</td>
+        <td>35468064</td>
+        <td class="assignment one"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment two"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment three"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment four"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment five"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="average">-</td>
+    </tr>
+    <td>Emilly Willis</td>
+        <td>45798</td>
+        <td class="assignment one"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment two"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment three"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment four"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment five"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="average">-</td>
+    </tr>
+    <td>Shakira Shakira</td>
+        <td>5678975</td>
+        <td class="assignment one"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment two"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment three"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment four"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment five"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="average">-</td>
+    </tr>
+    <td>Latina Lopez</td>
+        <td>0984524</td>
+        <td class="assignment one"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment two"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment three"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment four"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment five"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="average">-</td>
+    </tr>
+    <td>Donal Quck</td>
+        <td>084357</td>
+        <td class="assignment one"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment two"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment three"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment four"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment five"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="average">-</td>
+    </tr>
+    <td>Aluminum Man</td>
+        <td>0864234</td>
+        <td class="assignment one"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment two"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment three"><input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment four"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="assignment five"> <input type="int" value="-"oninput="removeMinus(this)"></td>
+        <td class="average">-</td>
+    </tr>
+</table>
 
 
-        <tr>
-            <td>Name</td>
-            <td>123456</td>
-            <td class="Assignment one"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment two"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment three"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment four"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment five"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td>00</td>
-        </tr>
-
-
-        <tr>
-            <td>Name</td>
-            <td>123456</td>
-            <td class="Assignment one"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment two"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment three"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment four"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment five"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td>00</td>
-        </tr>
-
-
-        <tr>
-            <td>Name</td>
-            <td>123456</td>
-            <td class="Assignment one"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment two"> <input type="numbers"  value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment three"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment four"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment five"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td>00</td>
-        </tr>
-        
-
-        <tr>
-            <td>Name</td>
-            <td>123456</td>
-            <td class="Assignment one"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment two"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment three"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment four"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment five"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td>00</td>
-        </tr>
-
-
-        <tr>
-            <td>Name</td>
-            <td>123456</td>
-            <td class="Assignment one"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment two"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment three"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment four"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment five"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td>00</td>
-        </tr>
-
-
-        <tr>
-            <td>Name</td>
-            <td>123456</td>
-            <td class="Assignment one"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment two"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment three"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment four"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td class="Assignment five"> <input type="numbers" value="-" oninput="removeMinus(this)"> </td>
-            <td>00</td>
-        </tr>
 
 
 
-
-    <script src="assignment-03.js"></script>
+<script src="assignment-03.js"></script>
 </body>
 </html>

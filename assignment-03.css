@@ -1,37 +1,71 @@
-body{
-    font-family: monospace;
-    font-size: 18px;
+/*i tried to centre the table but wont work*/
+
+
+*{
+    font-family: sans-serif
 }
 
-th{
-    background-color: black;
+.average-failed {
+    background-color: rgb(255, 0, 98);
     color: white;
-    font-size: 17px;
 }
-
 table{
-    background-color: black;
+    background:black
+}
+
+
+th {
+    background-color: darkgray;
+}
+
+
+td {
+    background-color: lightgrey;
     text-align: center;
 }
 
-tr{
-    background-color: rgb(188, 188, 188);
-    text-align: center;
+.schoolGrades
+{
+    justify-content: center;
+    align-items: center;
 }
-tr:nth-child(even){
-    background-color: rgb(255, 255, 255);
+body{
+    justify-content: center;
+    align-items: center;
 }
 
-.Assignment{
-    background-color: rgb(226, 226, 0);
+.assignment{
+    background-color: yellow;
 }
 
 input{
     border: none;
-    outline: none;
     background-color: transparent;
+    outline: none;
+    text-align: center;
     width: 100%;
 }
-input:focus{
-    background-color: transparent;
+
+
+button {
+    margin: 10px 30px; 
+    padding: 10px 20px; 
+    font-size: 15px;
+    border-radius: 50px; 
+    cursor: pointer; 
 }
+
+tr:nth-child(even){
+    background-color: rgb(255, 255, 255); /*supposed to make every 2nd row white but its not working*/
+}
+
+.functionButtons {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px; 
+}
+
+.functionButtons button {
+    margin: 0 10px; /* Add some space between buttons */
+}
+
